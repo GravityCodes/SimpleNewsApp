@@ -47,3 +47,81 @@ p {
   overflow-wrap: break-word;
   hyphens: auto;
 }
+
+
+
+:root {
+    --light-blue: #CAE9F5;
+    --light-blue-1: #F0F8FF;
+    --dark-blue: #3c565e;
+    --regular-blue: #AFDCEB;
+    --regular-blue-70: #afdceb70;
+    --background:#1e2b38;
+    --text: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+}
+
+#header-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: var(--dark-blue);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#logo{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--regular-blue);
+}
+
+#search{
+    width: 300px;
+    height: 30px;
+}
+
+#nav-ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-li {
+    font-size: 15px;
+    color: var(--text);
+    padding-bottom: 2px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+    user-select: none;
+    width: 60px;
+    text-align: center;
+}
+
+.nav-li:hover {
+    background-color: var(--regular-blue-70);
+}
+
+.nav-li:active{
+    background-color:var(--regular-blue);
+}
+
+.active-nav {
+    font-weight: 600;
+    background-color: var(--regular-blue-70);
+}
